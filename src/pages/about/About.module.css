@@ -1,4 +1,4 @@
-.container{
+.container {
   max-width: 1300px;
   padding: 1px;
   margin: 0px auto;
@@ -42,18 +42,15 @@
   gap: 1rem;
 }
 
-
 .messageContainer {
   display: flex;
   gap: 1rem;
   padding: 30px;
-
 }
 .messageContent {
   display: flex;
   gap: 1rem;
   align-items: center;
-  
 }
 
 .messageContent1 {
@@ -65,10 +62,10 @@
   border-bottom-right-radius: 30px;
 }
 
-.messageContent1  {
-  font: Rufina;
+.messageContent1 {
+  font-family: Rufina, serif;
   font-weight: 700;
-  font-style: Bold;
+  font-style: normal;
   color: #f5e9d6;
 }
 .messageContent1items {
@@ -91,10 +88,11 @@
   border-bottom-right-radius: 30px;
   padding: 30px;
 }
-.messageContent2 form{
-  color: #5B656F;
-  font: raleway;
-  font-style: Medium;
+.messageContent2 form {
+  color: #5b656f;
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .formInput {
@@ -111,25 +109,23 @@
 }
 
 .backgroundContainer {
- background-image: url('/assets/message-image.png');
+  background-image: url("/assets/message-image.png");
   background-size: cover;
   background-position: center;
- height: 400px;
- margin-top: 80px;
+  height: 400px;
+  margin-top: 80px;
 }
 
-
 @media (max-width: 600px) {
- .heroContent{
-  display: flex;
-  flex-direction: column;
- }
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    height: 110vh;
+    background-image: url(/assets/Image.png);
+  }
 
- 
-
- 
- .aboutContent {
-  margin-top: 180px;
+  .aboutContent {
+    margin-top: 190px;
     flex-direction: column;
   }
 
@@ -148,7 +144,7 @@
     padding: 20px;
   }
 
-  .messageContent2 form .form-input div {
+  .messageContent2 .formInput div {
     display: flex;
     flex-direction: column;
   }
@@ -158,6 +154,4 @@
     width: 100%;
     box-sizing: border-box;
   }
-
- 
 }

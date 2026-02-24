@@ -61,8 +61,8 @@
   gap: 4rem;
   align-items: center;
   background-color: #f5f3f1;
-  height: 700px;
-  padding-top: 100px;
+  /* height: 700px;
+  padding-top: 100px; */
 }
 .FrequentlyContent {
   display: flex;
@@ -104,7 +104,7 @@
   padding: 30px;
   min-height: 200px;
   width: 100%;
-  max-width: 780px; /* constrain the form width so textarea doesn't grow too large */
+  max-width: 780px; 
 }
 .messageContent2 form {
   color: #5b656f;
@@ -137,14 +137,31 @@
 @media (max-width: 768px) {
   .heroContent2 {
     flex-direction: column;
+    /* height: 100vh; */
   }
   .FrequentlyContent2 {
     flex-direction: column;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
 
   .FrequentlyContainer {
-    height: auto;
-    padding-top: 2rem;
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 200px;
+  }
+
+  .messageContent2 {
+    padding: 20px;
+  }
+
+  .messageContent2 .formInput div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .messageContent2 textarea,
+  .messageContent2 input {
+    width: 100%;
+    box-sizing: border-box;
   }
 }

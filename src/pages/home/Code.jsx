@@ -33,7 +33,7 @@ const Code = () => {
         </div>
 
         <div className={styles.aboutContent2}>
-          <img src="../../../public/assets/about-image.png" alt="" />
+          <img src="/assets/about-image.png" alt="about   " />
         </div>
         
 
