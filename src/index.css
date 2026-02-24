@@ -1,0 +1,169 @@
+*{
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --font-f: "Mulish", sans-serif;
+}
+body{
+font-family: var(--font-f);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.container{
+  max-width: 1300px;
+  padding: 0px auto;
+  margin: 0px auto;
+}
+.logo > img {
+  width: 100px;
+}
+header{
+       position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  box-shadow: 0 6px 18px rgba(0,0,0,.12); 
+}
+.header-content {  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+}
+nav{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+}
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 150px;
+  padding: 20px;
+}
+.footerContent {
+  display: flex;
+  gap: 10rem;
+}
+.footerContent1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footerContent1 p {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #5B656F;
+  font-style: Regular;
+  font: raleway;
+}
+.footerContent2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  color: #181D24;
+  font-style: medium;
+  font: raleway;
+}
+
+.footerIcon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footerIcon img {
+  height: 20px;
+  width: 20px;
+}
+.footerContent3 {
+  display: flex;
+  gap: 10rem;
+  color: #181D24;
+  font-style: regular;
+  font: raleway;
+}
+.footerContent3Item1 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+
+
+@media (max-width: 600px) {
+
+   .menu-icon {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+     background-color: #ddd;
+    text-align: center;
+  }
+
+  .nav.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav a {
+    padding: 15px 0;
+    border-top: 1px solid #333;
+    display: block;
+  }
+
+
+  .footerContent {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footerContent3 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+
+  
+  .footerContainer {
+    display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+    background-color: #dfe3e7;
+  }
+
+}
+

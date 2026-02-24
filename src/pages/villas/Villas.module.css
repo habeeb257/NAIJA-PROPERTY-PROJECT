@@ -1,0 +1,314 @@
+.container{
+  max-width: 1300px;
+  padding: 1px;
+  margin: 0px auto;
+}
+.heroContent{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 10px;
+}
+.heroContent1  {
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.heroContent1 h2{
+  color: #c9bdab;
+  font-family: 'Rufina', serif;
+  font-weight: 300;
+  font-size: 50px;
+} 
+.heroContent1 h6{
+   color: #c9bdab;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 23px;
+  background-color: #fffffff0;
+} 
+.heroContent2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heroContent2 form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* padding: 10px;
+  background-color: #ffffffff;
+  border: 5px solid #c9bdab;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  */
+} 
+.heroContent2 select{
+  border: none;
+}
+.heroContent2 button{
+    display: flex;
+  gap: 10px;
+  padding: 7px;
+  background-color: #5b656f;
+  color: hsl(0, 0%, 100%);
+}
+
+.serviceContent2 {
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.propertyCard {
+ background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: rgba(0,0,0,0.08) 0 4px 12px;
+}
+.propertyCard img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Desktop and Mobile View Toggle */
+.desktopView {
+  display: block;
+}
+
+.mobileView {
+  display: none;
+}
+
+.messageContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 30px;
+ 
+}
+.messageContent {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  
+}
+
+.messageContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #181d24;
+  padding: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.messageContent1  {
+  font-family: 'Rufina', serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f5e9d6;
+} 
+.messageContent1items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.messageContent2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 30px;
+  padding: 30px;
+}
+.messageContent2 form{
+  color: #5B656F;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+} 
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.messageContent2 button {
+  height: 30px;
+  width: 60px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.backgroundContainer {
+ background-image: url(../../../public/assets/message-image.png);
+  background-size: cover;
+  background-position: center;
+ height: 400px;
+ margin-top: 80px;
+}
+
+/* Make images responsive and ensure they don't overflow the container */
+.container img,
+.propertyCard img,
+.aboutContent2 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+/* Responsive rules for screens <= 600px */
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 16px;
+  }
+
+  .heroContent {
+    padding-top: 120px;    
+    padding-bottom: 40px;
+    background-position: center;
+  }
+
+  .heroContent1 h2 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+
+  .heroContent1 h6 {
+    font-size: 16px;
+  }
+
+  .heroContent2 form {
+    display: flex;
+    gap: 8px;
+    padding: 12px;
+    /* align-items: stretch; */
+  }
+
+  .heroContent2 select,
+  .heroContent2 button {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .serviceContent2 {
+    grid-template-columns: 1fr;
+  }
+
+
+
+  
+
+  .messageContent {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .messageContent1,
+  .messageContent2 {
+    padding: 20px;
+  }
+
+  .messageContent2 form .formInput div,
+  .messageContent2 form .form-input div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .messageContent2 textarea,
+  .messageContent2 input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Mobile Slider Styles */
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+  }
+
+  .mobileSliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+  }
+
+  .mobileSliderWrapper {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .mobileSliderItem {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobilePrevBtn,
+  .mobileNextBtn {
+    background-color: #5b656f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    z-index: 10;
+  }
+
+  .mobilePrevBtn:active,
+  .mobileNextBtn:active {
+    background-color: #444;
+  }
+
+  .mobileDotsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .mobileDot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .mobileDot:active {
+    background-color: #999;
+  }
+
+  .activeMobileDot {
+    background-color: #5b656f;
+  }
+
+  
+}

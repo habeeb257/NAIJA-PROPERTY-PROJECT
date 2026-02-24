@@ -1,0 +1,150 @@
+.container {
+  max-width: 1300px;
+  padding: 1px;
+  margin: 0px auto;
+}
+.heroContainer {
+  background-image: url(/assets/contact-image-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 50px;
+}
+
+.heroContent2 {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.heroContent2 img {
+  height: 247px;
+  width: 260px;
+  border-bottom-left-radius: 40px;
+}
+
+.messageContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #f5f3f1;
+  padding: 30px;
+  border-top-right-radius: 50px;
+}
+
+.messageContent1 h2 {
+  font-family: "Rufina", serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #181d24;
+}
+.messageContent1items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.FrequentlyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  background-color: #f5f3f1;
+  height: 700px;
+  padding-top: 100px;
+}
+.FrequentlyContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+}
+.FrequentlyContent1 {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+}
+
+.FrequentlyContent2 {
+  display: flex;
+  gap: 4rem;
+}
+.FrequentlyContent2Item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.messageContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+.messageContent2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 30px;
+  padding: 30px;
+  min-height: 200px;
+  width: 100%;
+  max-width: 780px; /* constrain the form width so textarea doesn't grow too large */
+}
+.messageContent2 form {
+  color: #5b656f;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* textarea styling to keep it reasonable and resizable vertically */
+.formInput textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 8px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.messageContent2 button {
+  height: 30px;
+  width: 60px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .heroContent2 {
+    flex-direction: column;
+  }
+  .FrequentlyContent2 {
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+
+  .FrequentlyContainer {
+    height: auto;
+    padding-top: 2rem;
+  }
+}
