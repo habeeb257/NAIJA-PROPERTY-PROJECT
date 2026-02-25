@@ -23,7 +23,7 @@ const Frequent = () => {
 
             <p>
               <i className="fa-solid fa-plus"></i> What is the procedure for
-              arranging and booking Accommodation?
+              arranging and booking Accommodatioon?
             </p>
 
             <p>
