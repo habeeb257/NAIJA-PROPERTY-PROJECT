@@ -428,13 +428,10 @@
   }
 
   .aboutContent {
-    flex-direction: column;
+    flex-direction: column;   
   }
 
-  .aboutContent2 img {
-    width: 100%;
-    height: auto;
-  }
+  
 
   .messageContent {
     flex-direction: column;
